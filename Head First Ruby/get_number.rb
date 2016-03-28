@@ -2,8 +2,12 @@
 
 puts "Welcome to Get My Number!"
 
-print "What's your name?"
+print "What's your name? "
 
 input = gets
 
-puts "Welcome, #{input}"
+name = input.chomp  
+
+puts "Welcome, #{name}!"
+
+puts "hello".methods
