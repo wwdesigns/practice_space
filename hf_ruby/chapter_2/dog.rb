@@ -1,5 +1,4 @@
-class Animal
-    
+class Dog
     attr_reader :name, :age, :breed
     
     def name=(value)
@@ -40,11 +39,11 @@ class Animal
     end
 end
 
-class Dog < Animal
-end
-class Bird < Animal
-end
-class Cat < Animal
-end
-
-
+dog = Dog.new
+dog.name="Daisy"
+dog.age = 3
+dog.breed="German Shephard"
+dog.report_age
+dog.talk
+dog.move("bed")
+dog.report_breed
