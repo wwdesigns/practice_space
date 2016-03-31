@@ -41,10 +41,22 @@ class Animal
 end
 
 class Dog < Animal
+    def to_s
+        "#{@name} the dog, age #{age}"
+    end
 end
 class Bird < Animal
+    def talk
+        puts "#{@name} says Chirp! Chirp!"
+    end
 end
 class Cat < Animal
+    def talk
+        puts "#{@name} says Meow!"
+    end
 end
+
+
+
 
 
